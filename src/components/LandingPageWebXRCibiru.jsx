@@ -5,13 +5,14 @@ import UPICIBIRU1 from "../assets/UPICIBIRU1.png";
 import UPICIBIRU2 from "../assets/UPICIBIRU2.png";
 import Sample from "../assets/Sample.png";
 import { ScanQrCode, RectangleGoggles, Images, MoveRight } from "lucide-react";
+import ChatbotWidget from "./ChatbotWidget";
 
 export default function LandingPageWebXR() {
   return (
     <div className="flex flex-col bg-white">
       <div className="self-stretch bg-white">
         <div className="flex flex-col items-center self-stretch">
-          <div className="self-stretch relative mb-[131px]">
+          <div className="self-stretch relative mb-[60px] md:mb-[100px] lg:mb-[131px]">
             {/* Header */}
             <div
               className="self-stretch  bg-cover bg-center pb-[0px]"
@@ -20,10 +21,10 @@ export default function LandingPageWebXR() {
               }}
             >
               <div className="flex flex-col items-center self-stretch bg-[#004060B0] pt-8">
-                <div className="flex justify-between items-center w-full  max-w-[1320px] px-6 mx-auto mb-[100px]">
+                <div className="flex justify-between items-center w-full max-w-[1320px] px-4 md:px-6 mx-auto mb-[60px] md:mb-[100px]">
                   <img
                     src={LOGOCIBIRU}
-                    className="w-auto h-[70px] object-fill"
+                    className="w-auto h-[44px] md:h-[56px] lg:h-[70px] object-fill"
                   />
                   <div className="flex shrink-0 items-center gap-[42px]">
                     <Link
@@ -40,13 +41,13 @@ export default function LandingPageWebXR() {
                     </Link>
                   </div>
                 </div>
-                <span className="text-white text-[40px] font-bold text-center w-[750px] mb-[0px]">
+                <span className="text-white text-[22px] md:text-[32px] lg:text-[40px] font-bold text-center w-full max-w-[90vw] md:max-w-[600px] lg:max-w-[750px] px-4 mb-0">
                   {"Selamat datang di"}
                 </span>
-                <span className="text-white text-[40px] font-bold text-center w-[750px] mb-[31px]">
+                <span className="text-white text-[22px] md:text-[32px] lg:text-[40px] font-bold text-center w-full max-w-[90vw] md:max-w-[600px] lg:max-w-[750px] px-4 mb-4 md:mb-[31px]">
                   {" Virtual Campus Tour Kampus UPI Cibiru"}
                 </span>
-                <span className="text-white text-base text-center w-[691px] mb-[277px]">
+                <span className="text-white text-sm md:text-base text-center w-full max-w-[90vw] md:max-w-[560px] lg:max-w-[691px] px-4 mb-[120px] md:mb-[200px] lg:mb-[277px]">
                   {
                     "Virtual Campus Tour Kampus UPI Cibiru memberikan pengalaman menjelajahi setiap sudut kampus secara virtual melalui perangkat digital, sehingga pengunjung dapat mengenal fasilitas, lingkungan, dan suasana akademik Kampus UPI Cibiru secara interaktif, informatif, dan imersif dari mana saja."
                   }
@@ -56,32 +57,33 @@ export default function LandingPageWebXR() {
             {/* Batas Header */}
 
             {/* Pilihan Fitur */}
-            <div className="flex flex-col items-center self-stretch absolute bottom-[-29px] right-0 left-0 px-4">
+            <div className="flex flex-col items-center self-stretch relative bottom-[-29px] right-0 left-0 px-4">
               <div
                 className="flex flex-col items-center bg-white pt-[0px] rounded-[10px] w-full max-w-[1300px]"
                 style={{ boxShadow: "0px 8px 20px #00000026" }}
               >
-                <div className="flex justify-around items-center w-full px-8 ">
-                  <div className="flex flex-1 flex-col items-center gap-3">
-                    <ScanQrCode className="w-[52px] h-[52px] md:w-[92px] md:h-[92px] text-[#009AD7]" />
-                    <span className="text-[#535353] text-sm md:text-2xl font-bold text-center ">
+                <div className="flex flex-col lg:flex-row justify-around items-center w-full px-4 lg:px-8 py-4 lg:py-0 gap-4 lg:gap-0">
+                  <div className="flex flex-1 flex-row lg:flex-col items-center gap-3 w-full lg:w-auto py-10">
+                    <ScanQrCode className="w-[40px] h-[40px] lg:w-[92px] lg:h-[92px] text-[#009AD7]" />
+                    <span className="text-[#535353] text-sm lg:text-2xl font-bold text-center">
                       AR Green Metric
                     </span>
                   </div>
 
-                  <div className="w-[1px] h-50 bg-black"></div>
-                  <div className="flex flex-1 flex-col items-center gap-3">
-                    <RectangleGoggles className="w-[52px] h-[52px] md:w-[92px] md:h-[92px] text-[#009AD7]" />
-                    <span className="text-[#535353] text-sm md:text-2xl font-bold text-center ">
+                  <div className="w-full h-[1px] lg:w-[1px] lg:h-16 bg-black"></div>
+
+                  <div className="flex flex-1 flex-row lg:flex-col items-center gap-3 w-full lg:w-auto py-10">
+                    <RectangleGoggles className="w-[40px] h-[40px] lg:w-[92px] lg:h-[92px] text-[#009AD7]" />
+                    <span className="text-[#535353] text-sm lg:text-2xl font-bold text-center">
                       3D VR Campus Tour
                     </span>
                   </div>
 
-                  <div className="w-[1px] h-50 bg-black"></div>
-                  <div className="flex flex-1 flex-col items-center gap-3">
-                    {" "}
-                    <Images className="w-[52px] h-[52px] md:w-[92px] md:h-[92px] text-[#009AD7]" />
-                    <span className="text-[#535353] text-sm md:text-2xl font-bold text-center">
+                  <div className="w-full h-[1px] lg:w-[1px] lg:h-16 bg-black"></div>
+
+                  <div className="flex flex-1 flex-row lg:flex-col items-center gap-3 w-full lg:w-auto py-10">
+                    <Images className="w-[40px] h-[40px] lg:w-[92px] lg:h-[92px] text-[#009AD7]" />
+                    <span className="text-[#535353] text-sm lg:text-2xl font-bold text-center">
                       Galeri
                     </span>
                   </div>
@@ -94,39 +96,47 @@ export default function LandingPageWebXR() {
           </div>
           {/* Batas Header Terluar */}
           {/* Informasi Cibiru */}
-          <div
-            className="flex items-center self-stretch bg-white max-w-[1300px] py-5 mb-[162px] mx-auto rounded-[15px]"
-            style={{
-              boxShadow: "0px 8px 20px #00000026",
-            }}
-          >
-            <div className="flex flex-col shrink-0 items-start px-[1px] ml-[22px] mr-[30px] ">
-              <img
-                src={UPICIBIRU2}
-                className="w-[478px] h-[360px] object-fill rounded-[10px]"
-              />
-            </div>
-            <div className="flex flex-1 flex-col items-start mr-[20px]">
-              <span className="text-[#192A3D] text-[32px] font-bold mb-[26px] ml-[3px]">
-                {"Kampus UPI Cibiru"}
-              </span>
-              <span className="text-[#192A3D] text-base mb-8">
-                {
-                  "Kampus UPI Cibiru merupakan salah satu kampus Universitas Pendidikan Indonesia yang berada di kawasan timur Kota Bandung dengan lingkungan yang hijau dan suasana akademik yang kondusif. Kampus ini menjadi pusat kegiatan pendidikan, penelitian, dan pengembangan mahasiswa dengan berbagai fasilitas pembelajaran serta ruang terbuka yang mendukung aktivitas akademik maupun kemahasiswaan."
-                }
-              </span>
-              <a
-                href="https://kd-cibiru.upi.edu/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="flex flex-col items-start bg-[#1DB0E0] text-left py-2 px-[15px] rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
-                  <span className="text-white text-base">{"Selengkapnya"}</span>
-                </button>
-              </a>
+          {/* Informasi Cibiru */}
+          <div className="mx-[20px]">
+            <div
+              className="flex flex-col lg:flex-row items-center self-stretch bg-white w-full max-w-[1300px] py-5 mb-[162px] mx-auto rounded-[15px] px-4 lg:px-0 "
+              style={{
+                boxShadow: "0px 8px 20px #00000026",
+              }}
+            >
+              <div className="flex flex-col shrink-0 items-start w-full lg:w-auto lg:ml-[22px] lg:mr-[30px]">
+                <img
+                  src={UPICIBIRU2}
+                  className="w-full lg:w-[478px] h-[220px] md:h-[300px] lg:h-[360px] object-cover rounded-[10px]"
+                />
+              </div>
+              <div className="flex flex-1 flex-col items-start mt-4 lg:mt-0 lg:mr-[20px]">
+                <span className="text-[#192A3D] text-[22px] md:text-[28px] lg:text-[32px] font-bold mb-[26px] ml-[3px]">
+                  {"Kampus UPI Cibiru"}
+                </span>
+                <span className="text-[#192A3D] text-sm md:text-base mb-8">
+                  {
+                    "Kampus UPI Cibiru merupakan salah satu kampus Universitas Pendidikan Indonesia yang berada di kawasan timur Kota Bandung dengan lingkungan yang hijau dan suasana akademik yang kondusif. Kampus ini menjadi pusat kegiatan pendidikan, penelitian, dan pengembangan mahasiswa dengan berbagai fasilitas pembelajaran serta ruang terbuka yang mendukung aktivitas akademik maupun kemahasiswaan."
+                  }
+                </span>
+
+                <a
+                  href="https://kd-cibiru.upi.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="flex flex-col items-start bg-[#1DB0E0] text-left py-2 px-[15px] rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
+                    <span className="text-white text-base">
+                      {"Selengkapnya"}
+                    </span>
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
           {/* Batas Informasi Cibiru */}
+          {/* Batas Informasi Cibiru */}
+
           <span className="text-[#192A3D] text-[40px] font-bold mb-[92px]">
             {"Mulai dengan AR Cibiru !"}
           </span>
@@ -152,410 +162,339 @@ export default function LandingPageWebXR() {
           </div>
 
           {/* AR Card */}
-          <span className="text-[#192A3D] text-[40px] font-bold mb-[92px]">
+
+          <span className="text-[#192A3D] text-[22px] md:text-[32px] lg:text-[40px] font-bold mb-[40px] md:mb-[60px] lg:mb-[92px] text-center px-4">
             {"Popular Best Spot"}
           </span>
-          <div className="flex flex-col items-center self-stretch w-full px-4 mb-[175px]">
+
+          <div className="w-full px-4 mb-[80px] md:mb-[120px] lg:mb-[175px]">
             <div
-              className="flex flex-col items-center bg-white pt-[0px] rounded-[10px] w-full max-w-[1300px]"
-              style={{ boxShadow: "0px 8px 20px #ffffff26" }}
+              className="bg-white rounded-[10px] w-full max-w-[1300px] mx-auto p-6 lg:p-8"
+              style={{ boxShadow: "0px 8px 20px #ffffff" }}
             >
-              <div className="flex justify-around items-center w-full px-8 ">
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto">
-                      <div className="flex flex-1 flex-col items-start mr-[83px]">
-                        <div className="absolute flex flex-col items-start bg-[#FFC40C] text-left py-4 px-[18px] rounded-[5px] border-0">
-                          <span className="text-black text-2xl font-bold">
-                            {"6"}
-                          </span>
-                        </div>
-                        <div
-                          className="flex flex-col items-center bg-neutral-100 pt-[1px] ml-[25px] rounded-[10px]"
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <img
-                            src={Sample}
-                            className="w-[365px] h-[271px] mb-[33px] object-fill"
-                          />
-                          <span className="text-black text-2xl font-bold mb-[50px]">
-                            {"Kantin Kampus"}
-                          </span>
-                          <span className="text-black text-base text-center w-[277px] mb-12">
-                            {
-                              "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
-                            }
-                          </span>
-                          <a
-                            href="https://kd-cibiru.upi.edu/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <button className="flex items-center bg-[#1DB0E0] text-left py-[1px] px-[7px] mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
-                              <RectangleGoggles
-                                size={40}
-                                color="#ffffff"
-                                strokeWidth={5}
-                                absoluteStrokeWidth
-                              />
-
-                              <span className="text-white text-xl font-bold mx-2">
-                                {"VR Tour"}
-                              </span>
-
-                              <MoveRight
-                                size={30}
-                                color="#ffffff"
-                                strokeWidth={2}
-                                absoluteStrokeWidth
-                              />
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                {/* Card 1 */}
+                <div className="relative flex flex-col items-center">
+                  {/* Badge angka */}
+                  <div className="absolute top-0 left-0 z-10 bg-[#FFC40C] py-3 px-[18px] rounded-[5px]">
+                    <span className="text-black text-2xl font-bold">6</span>
+                  </div>
+                  {/* Card body */}
+                  <div
+                    className="flex flex-col items-center bg-neutral-100 rounded-[10px] w-full pt-1"
+                    style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                  >
+                    <img
+                      src={Sample}
+                      className="w-full h-[200px] md:h-[250px] lg:h-[271px] object-cover rounded-t-[10px] mb-6"
+                    />
+                    <span className="text-black text-xl md:text-2xl font-bold mb-4 md:mb-[50px]">
+                      {"Kantin Kampus"}
+                    </span>
+                    <span className="text-black text-sm md:text-base text-center w-[80%] mb-8 md:mb-12">
+                      {
+                        "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
+                      }
+                    </span>
+                    <a
+                      href="https://kd-cibiru.upi.edu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="flex items-center bg-[#1DB0E0] py-1 px-2 mb-6 md:mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200 gap-1">
+                        <RectangleGoggles
+                          size={32}
+                          color="#ffffff"
+                          strokeWidth={5}
+                          absoluteStrokeWidth
+                        />
+                        <span className="text-white text-base md:text-xl font-bold mx-2">
+                          {"VR Tour"}
+                        </span>
+                        <MoveRight
+                          size={24}
+                          color="#ffffff"
+                          strokeWidth={2}
+                          absoluteStrokeWidth
+                        />
+                      </button>
+                    </a>
                   </div>
                 </div>
 
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  {" "}
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto">
-                      <div className="flex flex-1 flex-col items-start mr-[83px]">
-                        <div className="absolute flex flex-col items-start bg-[#FFC40C] text-left py-4 px-[18px] rounded-[5px] border-0">
-                          <span className="text-black text-2xl font-bold">
-                            {"6"}
-                          </span>
-                        </div>
-                        <div
-                          className="flex flex-col items-center bg-neutral-100 pt-[1px] ml-[25px] rounded-[10px]"
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <img
-                            src={Sample}
-                            className="w-[365px] h-[271px] mb-[33px] object-fill"
-                          />
-                          <span className="text-black text-2xl font-bold mb-[50px]">
-                            {"Kantin Kampus"}
-                          </span>
-                          <span className="text-black text-base text-center w-[277px] mb-12">
-                            {
-                              "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
-                            }
-                          </span>
-                          <a
-                            href="https://kd-cibiru.upi.edu/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <button className="flex items-center bg-[#1DB0E0] text-left py-[1px] px-[7px] mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
-                              <RectangleGoggles
-                                size={40}
-                                color="#ffffff"
-                                strokeWidth={5}
-                                absoluteStrokeWidth
-                              />
-
-                              <span className="text-white text-xl font-bold mx-2">
-                                {"VR Tour"}
-                              </span>
-
-                              <MoveRight
-                                size={30}
-                                color="#ffffff"
-                                strokeWidth={2}
-                                absoluteStrokeWidth
-                              />
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                {/* Card 2 */}
+                <div className="relative flex flex-col items-center">
+                  <div className="absolute top-0 left-0 z-10 bg-[#FFC40C] py-3 px-[18px] rounded-[5px]">
+                    <span className="text-black text-2xl font-bold">6</span>
+                  </div>
+                  <div
+                    className="flex flex-col items-center bg-neutral-100 rounded-[10px] w-full pt-1"
+                    style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                  >
+                    <img
+                      src={Sample}
+                      className="w-full h-[200px] md:h-[250px] lg:h-[271px] object-cover rounded-t-[10px] mb-6"
+                    />
+                    <span className="text-black text-xl md:text-2xl font-bold mb-4 md:mb-[50px]">
+                      {"Kantin Kampus"}
+                    </span>
+                    <span className="text-black text-sm md:text-base text-center w-[80%] mb-8 md:mb-12">
+                      {
+                        "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
+                      }
+                    </span>
+                    <a
+                      href="https://kd-cibiru.upi.edu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="flex items-center bg-[#1DB0E0] py-1 px-2 mb-6 md:mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200 gap-1">
+                        <RectangleGoggles
+                          size={32}
+                          color="#ffffff"
+                          strokeWidth={5}
+                          absoluteStrokeWidth
+                        />
+                        <span className="text-white text-base md:text-xl font-bold mx-2">
+                          {"VR Tour"}
+                        </span>
+                        <MoveRight
+                          size={24}
+                          color="#ffffff"
+                          strokeWidth={2}
+                          absoluteStrokeWidth
+                        />
+                      </button>
+                    </a>
                   </div>
                 </div>
 
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  {" "}
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto">
-                      <div className="flex flex-1 flex-col items-start mr-[83px]">
-                        <div className="absolute flex flex-col items-start bg-[#FFC40C] text-left py-4 px-[18px] rounded-[5px] border-0">
-                          <span className="text-black text-2xl font-bold">
-                            {"6"}
-                          </span>
-                        </div>
-                        <div
-                          className="flex flex-col items-center bg-neutral-100 pt-[1px] ml-[25px] rounded-[10px]"
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <img
-                            src={Sample}
-                            className="w-[365px] h-[271px] mb-[33px] object-fill"
-                          />
-                          <span className="text-black text-2xl font-bold mb-[50px]">
-                            {"Kantin Kampus"}
-                          </span>
-                          <span className="text-black text-base text-center w-[277px] mb-12">
-                            {
-                              "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
-                            }
-                          </span>
-                          <a
-                            href="https://kd-cibiru.upi.edu/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <button className="flex items-center bg-[#1DB0E0] text-left py-[1px] px-[7px] mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
-                              <RectangleGoggles
-                                size={40}
-                                color="#ffffff"
-                                strokeWidth={5}
-                                absoluteStrokeWidth
-                              />
-
-                              <span className="text-white text-xl font-bold mx-2">
-                                {"VR Tour"}
-                              </span>
-
-                              <MoveRight
-                                size={30}
-                                color="#ffffff"
-                                strokeWidth={2}
-                                absoluteStrokeWidth
-                              />
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                {/* Card 3 */}
+                <div className="relative flex flex-col items-center">
+                  <div className="absolute top-0 left-0 z-10 bg-[#FFC40C] py-3 px-[18px] rounded-[5px]">
+                    <span className="text-black text-2xl font-bold">6</span>
+                  </div>
+                  <div
+                    className="flex flex-col items-center bg-neutral-100 rounded-[10px] w-full pt-1"
+                    style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                  >
+                    <img
+                      src={Sample}
+                      className="w-full h-[200px] md:h-[250px] lg:h-[271px] object-cover rounded-t-[10px] mb-6"
+                    />
+                    <span className="text-black text-xl md:text-2xl font-bold mb-4 md:mb-[50px]">
+                      {"Kantin Kampus"}
+                    </span>
+                    <span className="text-black text-sm md:text-base text-center w-[80%] mb-8 md:mb-12">
+                      {
+                        "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
+                      }
+                    </span>
+                    <a
+                      href="https://kd-cibiru.upi.edu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="flex items-center bg-[#1DB0E0] py-1 px-2 mb-6 md:mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200 gap-1">
+                        <RectangleGoggles
+                          size={32}
+                          color="#ffffff"
+                          strokeWidth={5}
+                          absoluteStrokeWidth
+                        />
+                        <span className="text-white text-base md:text-xl font-bold mx-2">
+                          {"VR Tour"}
+                        </span>
+                        <MoveRight
+                          size={24}
+                          color="#ffffff"
+                          strokeWidth={2}
+                          absoluteStrokeWidth
+                        />
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
-
-              <div className="w-full h-1.5 rounded-br-[5px] rounded-bl-[5px]"></div>
             </div>
           </div>
           {/* Batas AR Card */}
 
           {/* AR Card */}
-          <div className="flex flex-col items-center self-stretch w-full px-4 mb-[175px]">
+          <div className="w-full px-4 mb-[80px] md:mb-[120px] lg:mb-[175px]">
             <div
-              className="flex flex-col bg-white rounded-[15px] w-full max-w-[1300px] overflow-hidden py-6 gap-6 "
+              className="flex flex-col bg-white rounded-[15px] w-full max-w-[1300px] mx-auto overflow-hidden py-6 gap-6"
               style={{ boxShadow: "0px 8px 20px #00000026" }}
             >
               {/* Header - badge angka + judul */}
-              <div className="flex items-center px-4 gap-4 ">
+              <div className="flex items-center px-4 gap-4">
                 <div className="bg-[#FFC40C] py-2 px-4 rounded-[8px]">
-                  <span className="text-black text-2xl font-bold">4</span>
+                  <span className="text-black text-xl md:text-2xl font-bold">
+                    4
+                  </span>
                 </div>
-                <span className="text-black text-2xl font-bold">
+                <span className="text-black text-xl md:text-2xl font-bold">
                   Gedung Biru
                 </span>
               </div>
 
-              {/* Grid 4 card */}
-              <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y divide-gray-300 ">
-                <div className="flex flex-1 flex-col items-center ">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mx-auto ">
-                      <div className="flex flex-1 flex-col items-start ">
-                        <div className="flex flex-col items-center bg-neutral-100 pt-[1px]">
-                          <img
-                            src={Sample}
-                            className="w-[365px] h-[271px] mb-[33px] object-fill"
-                          />
-                          <span className="text-black text-2xl font-bold mb-[50px]">
-                            {"Kantin Kampus"}
-                          </span>
-                          <span className="text-black text-base text-center w-[277px] mb-12">
-                            {
-                              "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
-                            }
-                          </span>
-                          <a
-                            href="https://kd-cibiru.upi.edu/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <button className="flex items-center bg-[#1DB0E0] text-left py-[1px] px-[7px] mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
-                              <RectangleGoggles
-                                size={40}
-                                color="#ffffff"
-                                strokeWidth={5}
-                                absoluteStrokeWidth
-                              />
-
-                              <span className="text-white text-xl font-bold mx-2">
-                                {"VR Tour"}
-                              </span>
-
-                              <MoveRight
-                                size={30}
-                                color="#ffffff"
-                                strokeWidth={2}
-                                absoluteStrokeWidth
-                              />
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              {/* Grid 4 card: 1 kolom di 320, 2 kolom di 768, 4 kolom di 1024 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-x md:divide-y divide-gray-300">
+                {/* Card 1 */}
+                <div className="flex flex-col items-center ">
+                  <img
+                    src={Sample}
+                    className="w-full h-[180px] md:h-[200px] lg:h-[271px] object-cover  mb-4 md:mb-[33px]"
+                  />
+                  <span className="text-black text-lg md:text-2xl font-bold mb-3 md:mb-[50px] text-center">
+                    {"Kantin Kampus"}
+                  </span>
+                  <span className="text-black text-sm md:text-base text-center w-[90%] mb-6 md:mb-12">
+                    {
+                      "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
+                    }
+                  </span>
+                  <a
+                    href="https://kd-cibiru.upi.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="flex items-center bg-[#1DB0E0] py-1 px-2 mb-4 md:mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200 gap-1">
+                      <RectangleGoggles
+                        size={28}
+                        color="#ffffff"
+                        strokeWidth={5}
+                        absoluteStrokeWidth
+                      />
+                      <span className="text-white text-base md:text-xl font-bold mx-2">
+                        {"VR Tour"}
+                      </span>
+                      <MoveRight
+                        size={22}
+                        color="#ffffff"
+                        strokeWidth={2}
+                        absoluteStrokeWidth
+                      />
+                    </button>
+                  </a>
                 </div>
-                {/* Pemisah */}
-                {/* Pemisah */}
-                <div className="flex flex-1 flex-col items-center ">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mx-auto">
-                      <div className="flex flex-1 flex-col items-start ">
-                        <div className="flex flex-col items-center bg-neutral-100 pt-[1px]  ">
-                          <img
-                            src={Sample}
-                            className="w-[365px] h-[271px] mb-[33px] object-fill"
-                          />
-                          <span className="text-black text-2xl font-bold mb-[50px]">
-                            {"Kantin Kampus"}
-                          </span>
-                          <span className="text-black text-base text-center w-[277px] mb-12">
-                            {
-                              "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
-                            }
-                          </span>
-                          <a
-                            href="https://kd-cibiru.upi.edu/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <button className="flex items-center bg-[#1DB0E0] text-left py-[1px] px-[7px] mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
-                              <RectangleGoggles
-                                size={40}
-                                color="#ffffff"
-                                strokeWidth={5}
-                                absoluteStrokeWidth
-                              />
 
-                              <span className="text-white text-xl font-bold mx-2">
-                                {"VR Tour"}
-                              </span>
-
-                              <MoveRight
-                                size={30}
-                                color="#ffffff"
-                                strokeWidth={2}
-                                absoluteStrokeWidth
-                              />
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                {/* Card 2 */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={Sample}
+                    className="w-full h-[180px] md:h-[200px] lg:h-[271px] object-cover mb-4 md:mb-[33px]"
+                  />
+                  <span className="text-black text-lg md:text-2xl font-bold mb-3 md:mb-[50px] text-center">
+                    {"Kantin Kampus"}
+                  </span>
+                  <span className="text-black text-sm md:text-base text-center w-[90%] mb-6 md:mb-12">
+                    {
+                      "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
+                    }
+                  </span>
+                  <a
+                    href="https://kd-cibiru.upi.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="flex items-center bg-[#1DB0E0] py-1 px-2 mb-4 md:mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200 gap-1">
+                      <RectangleGoggles
+                        size={28}
+                        color="#ffffff"
+                        strokeWidth={5}
+                        absoluteStrokeWidth
+                      />
+                      <span className="text-white text-base md:text-xl font-bold mx-2">
+                        {"VR Tour"}
+                      </span>
+                      <MoveRight
+                        size={22}
+                        color="#ffffff"
+                        strokeWidth={2}
+                        absoluteStrokeWidth
+                      />
+                    </button>
+                  </a>
                 </div>
-                {/* Pemisah */}
-                {/* Pemisah */}
-                <div className="flex flex-1 flex-col items-center ">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative  mx-auto">
-                      <div className="flex flex-1 flex-col items-start ">
-                        <div className="flex flex-col items-center bg-neutral-100 pt-[1px]  ">
-                          <img
-                            src={Sample}
-                            className="w-[365px] h-[271px] mb-[33px] object-fill"
-                          />
-                          <span className="text-black text-2xl font-bold mb-[50px]">
-                            {"Kantin Kampus"}
-                          </span>
-                          <span className="text-black text-base text-center w-[277px] mb-12">
-                            {
-                              "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
-                            }
-                          </span>
-                          <a
-                            href="https://kd-cibiru.upi.edu/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <button className="flex items-center bg-[#1DB0E0] text-left py-[1px] px-[7px] mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
-                              <RectangleGoggles
-                                size={40}
-                                color="#ffffff"
-                                strokeWidth={5}
-                                absoluteStrokeWidth
-                              />
 
-                              <span className="text-white text-xl font-bold mx-2">
-                                {"VR Tour"}
-                              </span>
-
-                              <MoveRight
-                                size={30}
-                                color="#ffffff"
-                                strokeWidth={2}
-                                absoluteStrokeWidth
-                              />
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                {/* Card 1 */}
+                <div className="flex flex-col items-center ">
+                  <img
+                    src={Sample}
+                    className="w-full h-[180px] md:h-[200px] lg:h-[271px] object-cover  mb-4 md:mb-[33px]"
+                  />
+                  <span className="text-black text-lg md:text-2xl font-bold mb-3 md:mb-[50px] text-center">
+                    {"Kantin Kampus"}
+                  </span>
+                  <span className="text-black text-sm md:text-base text-center w-[90%] mb-6 md:mb-12">
+                    {
+                      "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
+                    }
+                  </span>
+                  <a
+                    href="https://kd-cibiru.upi.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="flex items-center bg-[#1DB0E0] py-1 px-2 mb-4 md:mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200 gap-1">
+                      <RectangleGoggles
+                        size={28}
+                        color="#ffffff"
+                        strokeWidth={5}
+                        absoluteStrokeWidth
+                      />
+                      <span className="text-white text-base md:text-xl font-bold mx-2">
+                        {"VR Tour"}
+                      </span>
+                      <MoveRight
+                        size={22}
+                        color="#ffffff"
+                        strokeWidth={2}
+                        absoluteStrokeWidth
+                      />
+                    </button>
+                  </a>
                 </div>
-                {/* Pemisah */}
-                {/* Pemisah */}
-                <div className="flex flex-1 flex-col items-center ">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mx-auto">
-                      <div className="flex flex-1 flex-col items-start ">
-                        <div className="flex flex-col items-center bg-neutral-100 pt-[1px]  ">
-                          <img
-                            src={Sample}
-                            className="w-[365px] h-[271px] mb-[33px] object-fill"
-                          />
-                          <span className="text-black text-2xl font-bold mb-[50px]">
-                            {"Kantin Kampus"}
-                          </span>
-                          <span className="text-black text-base text-center w-[277px] mb-12">
-                            {
-                              "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
-                            }
-                          </span>
-                          <a
-                            href="https://kd-cibiru.upi.edu/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <button className="flex items-center bg-[#1DB0E0] text-left py-[1px] px-[7px] mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
-                              <RectangleGoggles
-                                size={40}
-                                color="#ffffff"
-                                strokeWidth={5}
-                                absoluteStrokeWidth
-                              />
 
-                              <span className="text-white text-xl font-bold mx-2">
-                                {"VR Tour"}
-                              </span>
-
-                              <MoveRight
-                                size={30}
-                                color="#ffffff"
-                                strokeWidth={2}
-                                absoluteStrokeWidth
-                              />
-                            </button>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                {/* Card 2 */}
+                <div className="flex flex-col items-center">
+                  <img
+                    src={Sample}
+                    className="w-full h-[180px] md:h-[200px] lg:h-[271px] object-cover mb-4 md:mb-[33px]"
+                  />
+                  <span className="text-black text-lg md:text-2xl font-bold mb-3 md:mb-[50px] text-center">
+                    {"Kantin Kampus"}
+                  </span>
+                  <span className="text-black text-sm md:text-base text-center w-[90%] mb-6 md:mb-12">
+                    {
+                      "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
+                    }
+                  </span>
+                  <a
+                    href="https://kd-cibiru.upi.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="flex items-center bg-[#1DB0E0] py-1 px-2 mb-4 md:mb-8 rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200 gap-1">
+                      <RectangleGoggles
+                        size={28}
+                        color="#ffffff"
+                        strokeWidth={5}
+                        absoluteStrokeWidth
+                      />
+                      <span className="text-white text-base md:text-xl font-bold mx-2">
+                        {"VR Tour"}
+                      </span>
+                      <MoveRight
+                        size={22}
+                        color="#ffffff"
+                        strokeWidth={2}
+                        absoluteStrokeWidth
+                      />
+                    </button>
+                  </a>
                 </div>
-                {/* Pemisah */}
               </div>
             </div>
           </div>
@@ -563,308 +502,174 @@ export default function LandingPageWebXR() {
 
           {/* Gallery */}
 
-          <span className="text-[#192A3D] text-[40px] font-bold mb-[92px]">
+          <span className="text-[#192A3D] text-[22px] md:text-[32px] lg:text-[40px] font-bold mb-[40px] md:mb-[60px] lg:mb-[92px] text-center px-4">
             {"Indikator"}
           </span>
-          <div className="flex flex-col items-center self-stretch w-full px-4 mb-[175px]">
+
+          <div className="w-full px-4 mb-[80px] md:mb-[120px] lg:mb-[175px]">
             <div
-              className="flex flex-col items-center bg-white pt-[0px] rounded-[10px] w-full max-w-[1300px]"
+              className="bg-white rounded-[10px] w-full max-w-[1300px] mx-auto p-4 md:p-6 lg:p-8"
               style={{ boxShadow: "0px 8px 20px #ffffff26" }}
             >
-              <div className="flex justify-around items-center w-full px-8 ">
-                {/* foto */}
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto">
-                      <div className="flex flex-1 flex-col items-start mr-[83px]">
-                        <div
-                          className="relative w-[365px] h-[271px] rounded-[10px] overflow-hidden"
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <img
-                            src={Sample}
-                            className="w-full h-full  object-fill rounded-[10px]"
-                          />
-                          <div className="absolute inset-0 bg-[#155E85]/40"></div>
-                          <div className="absolute bottom-0 left-0 p-4">
-                            <span className="text-white text-lg font-semibold">
-                              Judul
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              {/* Grid: 1 kolom di 320, 2 kolom di 768, 3 kolom di 1024 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                {/* Foto 1 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={Sample} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Judul
+                    </span>
                   </div>
                 </div>
-                {/* Batas tiap foto */}
-                {/* foto */}
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto">
-                      <div className="flex flex-1 flex-col items-start mr-[83px]">
-                        <div
-                          className="relative w-[365px] h-[271px] rounded-[10px] overflow-hidden"
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <img
-                            src={Sample}
-                            className="w-full h-full  object-fill rounded-[10px]"
-                          />
-                          <div className="absolute inset-0 bg-[#155E85]/40"></div>
-                          <div className="absolute bottom-0 left-0 p-4">
-                            <span className="text-white text-lg font-semibold">
-                              Judul
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Batas tiap foto */}
-                {/* foto */}
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto">
-                      <div className="flex flex-1 flex-col items-start mr-[83px]">
-                        <div
-                          className="relative w-[365px] h-[271px] rounded-[10px] overflow-hidden"
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <img
-                            src={Sample}
-                            className="w-full h-full  object-fill rounded-[10px]"
-                          />
-                          <div className="absolute inset-0 bg-[#155E85]/40"></div>
-                          <div className="absolute bottom-0 left-0 p-4">
-                            <span className="text-white text-lg font-semibold">
-                              Judul
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Batas tiap foto */}
 
-                {/* Batas 3 foto */}
+                {/* Foto 2 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={Sample} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Judul
+                    </span>
+                  </div>
+                </div>
+
+                {/* Foto 3 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={Sample} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Judul
+                    </span>
+                  </div>
+                </div>
+
+                {/* Foto 4 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={Sample} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Judul
+                    </span>
+                  </div>
+                </div>
+
+                {/* Foto 5 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={Sample} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Judul
+                    </span>
+                  </div>
+                </div>
+
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={Sample} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Judul
+                    </span>
+                  </div>
+                </div>
               </div>
-              <div className="flex justify-around items-center w-full px-8 ">
-                {/* foto */}
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto">
-                      <div className="flex flex-1 flex-col items-start mr-[83px]">
-                        <div
-                          className="relative w-[365px] h-[271px] rounded-[10px] overflow-hidden"
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <img
-                            src={Sample}
-                            className="w-full h-full  object-fill rounded-[10px]"
-                          />
-                          <div className="absolute inset-0 bg-[#155E85]/40"></div>
-                          <div className="absolute bottom-0 left-0 p-4">
-                            <span className="text-white text-lg font-semibold">
-                              Judul
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Batas tiap foto */}
-                {/* foto */}
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto">
-                      <div className="flex flex-1 flex-col items-start mr-[83px]">
-                        <div
-                          className="relative w-[365px] h-[271px] rounded-[10px] overflow-hidden"
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <img
-                            src={Sample}
-                            className="w-full h-full  object-fill rounded-[10px]"
-                          />
-                          <div className="absolute inset-0 bg-[#155E85]/40"></div>
-                          <div className="absolute bottom-0 left-0 p-4">
-                            <span className="text-white text-lg font-semibold">
-                              Judul
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Batas tiap foto */}
-                {/* foto */}
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto">
-                      <div className="flex flex-1 flex-col items-start mr-[83px]">
-                        <div
-                          className="relative w-[365px] h-[271px] rounded-[10px] overflow-hidden"
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <img
-                            src={Sample}
-                            className="w-full h-full  object-fill rounded-[10px]"
-                          />
-                          <div className="absolute inset-0 bg-[#155E85]/40"></div>
-                          <div className="absolute bottom-0 left-0 p-4">
-                            <span className="text-white text-lg font-semibold">
-                              Judul
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Batas tiap foto */}
-
-                {/* Batas 3 foto */}
-              </div>
-
-              <div className="w-full h-1.5 rounded-br-[5px] rounded-bl-[5px]"></div>
             </div>
           </div>
-
           {/* Batas Gallery */}
 
           {/* YT */}
 
-          <span className="text-[#192A3D] text-[40px] font-bold mb-[92px]">
-            {"Lingkungan UPI Cibiru dengan lingkungan yang nyaman "}
+          <span className="text-[#192A3D] text-[18px] md:text-[28px] lg:text-[40px] font-bold mb-[40px] md:mb-[60px] lg:mb-[92px] text-center px-4 max-w-[90vw] lg:max-w-[900px]">
+            {"Lingkungan UPI Cibiru dengan lingkungan yang nyaman"}
           </span>
-          <div className="flex flex-col items-center self-stretch w-full px-4 mb-[175px]">
+
+          <div className="w-full px-4 mb-[80px] md:mb-[120px] lg:mb-[175px]">
             <div
-              className="flex flex-col items-center bg-white pt-[0px] rounded-[10px] w-full max-w-[1300px]"
-              style={{ boxShadow: "0px 8px 20px #ffffff26" }}
+              className="bg-white rounded-[10px] w-full max-w-[1300px] mx-auto p-4 md:p-6 lg:p-8"
+              style={{ boxShadow: "0px 8px 20px #ffffff" }}
             >
-              <div className="flex justify-around items-center w-full px-8 ">
-                {/* channel */}
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto px-5">
-                      <div className="flex flex-1 flex-col items-center">
-                        <div
-                          className="relative w-full h-[400px] rounded-[10px] "
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <iframe
-                            className="w-full h-full rounded-lg"
-                            src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
-                            title="YouTube video"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          ></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              {/* Grid: 1 kolom di 320, 1 kolom di 768, 2 kolom di 1024 */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
+                {/* Video 1 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[280px] lg:h-[400px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
-                {/* Batas tiap channel */}
-                {/* channel */}
-                <div className="flex flex-1 flex-col items-center gap-">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto px-5">
-                      <div className="flex flex-1 flex-col items-center">
-                        <div
-                          className="relative w-full h-[400px] rounded-[10px] "
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <iframe
-                            className="w-full h-full rounded-lg"
-                            src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
-                            title="YouTube video"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          ></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Batas tiap channel */}
 
-                {/* Batas 2 channel */}
+                {/* Video 2 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[280px] lg:h-[400px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+
+                {/* Video 3 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[280px] lg:h-[400px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+
+                {/* Video 4 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[280px] lg:h-[400px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>
-
-              <div className="flex justify-around items-center w-full px-8 ">
-                {/* channel */}
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto px-5">
-                      <div className="flex flex-1 flex-col items-center">
-                        <div
-                          className="relative w-full h-[400px] rounded-[10px] "
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <iframe
-                            className="w-full h-full rounded-lg"
-                            src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
-                            title="YouTube video"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          ></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Batas tiap channel */}
-                {/* channel */}
-                <div className="flex flex-1 flex-col items-center gap-3">
-                  <div className="relative w-full">
-                    <div className="flex items-center self-stretch max-w-[1350px] relative mb-[85px] mx-auto px-5">
-                      <div className="flex flex-1 flex-col items-center">
-                        <div
-                          className="relative w-full h-[400px] rounded-[10px] "
-                          style={{
-                            boxShadow: "12px 12px 33px #0000001A",
-                          }}
-                        >
-                          <iframe
-                            className="w-full h-full rounded-lg"
-                            src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
-                            title="YouTube video"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          ></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Batas tiap channel */}
-
-                {/* Batas 2 channel */}
-              </div>
-
-              <div className="w-full h-1.5 rounded-br-[5px] rounded-bl-[5px]"></div>
             </div>
           </div>
 
@@ -916,6 +721,7 @@ export default function LandingPageWebXR() {
           </div>
         </div>
       </div>
+      <ChatbotWidget />
     </div>
   );
 }
