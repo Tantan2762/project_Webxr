@@ -4,7 +4,53 @@ import LOGOCIBIRU from "../assets/LOGOCIBIRU.png";
 import UPICIBIRU1 from "../assets/UPICIBIRU1.png";
 import UPICIBIRU2 from "../assets/UPICIBIRU2.png";
 import Sample from "../assets/Sample.png";
-import { ScanQrCode, RectangleGoggles, Images, MoveRight } from "lucide-react";
+import Cibiru3d from "../assets/3D map Cibiru.png";
+import f1 from "../assets/1.jpg";
+import f2 from "../assets/2.jpg";
+import f3 from "../assets/3.jpg";
+import f4 from "../assets/4.jpg";
+import f5 from "../assets/5.jpg";
+import f6 from "../assets/6.jpg";
+import f7 from "../assets/7.jpg";
+import f8 from "../assets/8.jpg";
+import f9 from "../assets/9.jpg";
+import f10 from "../assets/10.jpg";
+import f11 from "../assets/11.jpg";
+import f12 from "../assets/12.jpg";
+import f13 from "../assets/13.jpg";
+import f14 from "../assets/14.jpg";
+import f15 from "../assets/15.jpg";
+import f16 from "../assets/16.jpg";
+import f17 from "../assets/17.jpg";
+import f18 from "../assets/18.jpg";
+import f19 from "../assets/19.jpg";
+import f20 from "../assets/20.jpg";
+import f21 from "../assets/21.jpg";
+import f22 from "../assets/22.jpg";
+import f23 from "../assets/23.jpg";
+import f24 from "../assets/24.jpg";
+import f25 from "../assets/25.jpg";
+import f26 from "../assets/26.jpg";
+import f27 from "../assets/27.jpg";
+import f28 from "../assets/28.jpg";
+import f29 from "../assets/29.jpg";
+import f30 from "../assets/30.jpg";
+import f32 from "../assets/32.jpg";
+import f33 from "../assets/33.jpg";
+import f34 from "../assets/34.jpg";
+import f35 from "../assets/35.jpg";
+import f36 from "../assets/36.jpg";
+import f37 from "../assets/37.jpg";
+import f38 from "../assets/38.jpg";
+import f39 from "../assets/39.jpg";
+
+import {
+  ScanQrCode,
+  RectangleGoggles,
+  Images,
+  MoveRight,
+  MapPin,
+} from "lucide-react";
 import ChatbotWidget from "./ChatbotWidget";
 
 export default function LandingPageWebXR() {
@@ -28,13 +74,13 @@ export default function LandingPageWebXR() {
                   />
                   <div className="flex shrink-0 items-center gap-[42px]">
                     <Link
-                      to="/about"
+                      to="/"
                       className="text-[#1DB0E0] text-base no-underline hover:opacity-75 cursor-pointe transition-opacity duartion-200"
                     >
-                      About
+                      Home
                     </Link>
                     <Link
-                      to="/contact"
+                      to="https://www.instagram.com/upicibiru_officiall?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                       className="text-white text-base no-underline hover:opacity-75 cursor-pointe transition-opacity duartion-200"
                     >
                       Contact
@@ -63,30 +109,45 @@ export default function LandingPageWebXR() {
                 style={{ boxShadow: "0px 8px 20px #00000026" }}
               >
                 <div className="flex flex-col lg:flex-row justify-around items-center w-full px-4 lg:px-8 py-4 lg:py-0 gap-4 lg:gap-0">
-                  <div className="flex flex-1 flex-row lg:flex-col items-center gap-3 w-full lg:w-auto py-10">
+                  {/* AR Green Metric */}
+                  <a
+                    href="https://www.youtube.com/embed/7osOpNn8o3M?si=qOtu5bhC0dAhwxP1"
+                    className="flex flex-1 flex-row lg:flex-col items-center gap-3 w-full lg:w-auto py-10 rounded-xl
+        hover:bg-[#f5f5f5] hover:scale-90 transition-all duration-300 cursor-pointer"
+                  >
                     <ScanQrCode className="w-[40px] h-[40px] lg:w-[92px] lg:h-[92px] text-[#009AD7]" />
                     <span className="text-[#535353] text-sm lg:text-2xl font-bold text-center">
                       AR Green Metric
                     </span>
-                  </div>
+                  </a>
 
                   <div className="w-full h-[1px] lg:w-[1px] lg:h-16 bg-black"></div>
 
-                  <div className="flex flex-1 flex-row lg:flex-col items-center gap-3 w-full lg:w-auto py-10">
+                  {/* 3D VR Campus Tour */}
+                  <a
+                    href="https://new-web-vr-y24j.vercel.app/"
+                    className="flex flex-1 flex-row lg:flex-col items-center gap-3 w-full lg:w-auto py-10 rounded-xl
+        hover:bg-[#f5f5f5] hover:scale-90 transition-all duration-300 cursor-pointer"
+                  >
                     <RectangleGoggles className="w-[40px] h-[40px] lg:w-[92px] lg:h-[92px] text-[#009AD7]" />
                     <span className="text-[#535353] text-sm lg:text-2xl font-bold text-center">
                       3D VR Campus Tour
                     </span>
-                  </div>
+                  </a>
 
                   <div className="w-full h-[1px] lg:w-[1px] lg:h-16 bg-black"></div>
 
-                  <div className="flex flex-1 flex-row lg:flex-col items-center gap-3 w-full lg:w-auto py-10">
+                  {/* Galeri */}
+                  <a
+                    href="#galeri"
+                    className="flex flex-1 flex-row lg:flex-col items-center gap-3 w-full lg:w-auto py-10 rounded-xl
+        hover:bg-[#f5f5f5] hover:scale-90 transition-all duration-300 cursor-pointer"
+                  >
                     <Images className="w-[40px] h-[40px] lg:w-[92px] lg:h-[92px] text-[#009AD7]" />
                     <span className="text-[#535353] text-sm lg:text-2xl font-bold text-center">
                       Galeri
                     </span>
-                  </div>
+                  </a>
                 </div>
 
                 <div className="bg-[#009AD7] w-full h-1.5 rounded-br-[5px] rounded-bl-[5px]"></div>
@@ -150,15 +211,11 @@ export default function LandingPageWebXR() {
           </div>
 
           <span className="text-[#192A3D] text-[40px] font-bold mb-[92px]">
-            {"3D Virtual Campous Tour Kampus UPI Cibiru"}
+            {"3D Virtual Campus Tour Kampus UPI Cibiru"}
           </span>
-          <div className="flex flex-col items-center self-stretch bg-[#AAB5C3] py-[362px] mb-[175px]">
-            <img
-              src={
-                "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/uZrwsYnXBJ/3y11g7ch_expires_30_days.png"
-              }
-              className="w-[210px] h-[210px] object-fill"
-            />
+
+          <div className="w-full">
+            <img src={Cibiru3d} className="w-full h-auto object-cover" />
           </div>
 
           {/* AR Card */}
@@ -177,7 +234,7 @@ export default function LandingPageWebXR() {
                 <div className="relative flex flex-col items-center">
                   {/* Badge angka */}
                   <div className="absolute top-0 left-0 z-10 bg-[#FFC40C] py-3 px-[18px] rounded-[5px]">
-                    <span className="text-black text-2xl font-bold">6</span>
+                    <span className="text-black text-2xl font-bold">1</span>
                   </div>
                   {/* Card body */}
                   <div
@@ -185,19 +242,19 @@ export default function LandingPageWebXR() {
                     style={{ boxShadow: "12px 12px 33px #0000001A" }}
                   >
                     <img
-                      src={Sample}
+                      src={f7}
                       className="w-full h-[200px] md:h-[250px] lg:h-[271px] object-cover rounded-t-[10px] mb-6"
                     />
                     <span className="text-black text-xl md:text-2xl font-bold mb-4 md:mb-[50px]">
-                      {"Kantin Kampus"}
+                      {"Gedung Baru"}
                     </span>
                     <span className="text-black text-sm md:text-base text-center w-[80%] mb-8 md:mb-12">
                       {
-                        "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
+                        "Gedung perkuliahan yang berisi kelas-kelas serta laboratorium berbagai Program Studi"
                       }
                     </span>
                     <a
-                      href="https://kd-cibiru.upi.edu/"
+                      href="https://new-web-vr-y24j.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -225,26 +282,26 @@ export default function LandingPageWebXR() {
                 {/* Card 2 */}
                 <div className="relative flex flex-col items-center">
                   <div className="absolute top-0 left-0 z-10 bg-[#FFC40C] py-3 px-[18px] rounded-[5px]">
-                    <span className="text-black text-2xl font-bold">6</span>
+                    <span className="text-black text-2xl font-bold">2</span>
                   </div>
                   <div
                     className="flex flex-col items-center bg-neutral-100 rounded-[10px] w-full pt-1"
                     style={{ boxShadow: "12px 12px 33px #0000001A" }}
                   >
                     <img
-                      src={Sample}
+                      src={f3}
                       className="w-full h-[200px] md:h-[250px] lg:h-[271px] object-cover rounded-t-[10px] mb-6"
                     />
                     <span className="text-black text-xl md:text-2xl font-bold mb-4 md:mb-[50px]">
-                      {"Kantin Kampus"}
+                      {"Gedung Biru"}
                     </span>
                     <span className="text-black text-sm md:text-base text-center w-[80%] mb-8 md:mb-12">
                       {
-                        "Tempat kuliner yang menyediakan berbagai macam makanan dan minuman yang sangat enak"
+                        "Gedung perkantoran dan perkuliahan yang berisi kelas-kelas serta laboratorium berbagai Program Studi serta manajemen kampus"
                       }
                     </span>
                     <a
-                      href="https://kd-cibiru.upi.edu/"
+                      href="https://new-web-vr-y24j.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -272,14 +329,14 @@ export default function LandingPageWebXR() {
                 {/* Card 3 */}
                 <div className="relative flex flex-col items-center">
                   <div className="absolute top-0 left-0 z-10 bg-[#FFC40C] py-3 px-[18px] rounded-[5px]">
-                    <span className="text-black text-2xl font-bold">6</span>
+                    <span className="text-black text-2xl font-bold">3</span>
                   </div>
                   <div
                     className="flex flex-col items-center bg-neutral-100 rounded-[10px] w-full pt-1"
                     style={{ boxShadow: "12px 12px 33px #0000001A" }}
                   >
                     <img
-                      src={Sample}
+                      src={f30}
                       className="w-full h-[200px] md:h-[250px] lg:h-[271px] object-cover rounded-t-[10px] mb-6"
                     />
                     <span className="text-black text-xl md:text-2xl font-bold mb-4 md:mb-[50px]">
@@ -291,7 +348,7 @@ export default function LandingPageWebXR() {
                       }
                     </span>
                     <a
-                      href="https://kd-cibiru.upi.edu/"
+                      href="https://new-web-vr-y24j.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -334,7 +391,7 @@ export default function LandingPageWebXR() {
                   </span>
                 </div>
                 <span className="text-black text-xl md:text-2xl font-bold">
-                  Gedung Biru
+                  Gedung Baru
                 </span>
               </div>
 
@@ -343,11 +400,11 @@ export default function LandingPageWebXR() {
                 {/* Card 1 */}
                 <div className="flex flex-col items-center ">
                   <img
-                    src={Sample}
+                    src={UPICIBIRU2}
                     className="w-full h-[180px] md:h-[200px] lg:h-[271px] object-cover  mb-4 md:mb-[33px]"
                   />
                   <span className="text-black text-lg md:text-2xl font-bold mb-3 md:mb-[50px] text-center">
-                    {"Kantin Kampus"}
+                    {"Lobby"}
                   </span>
                   <span className="text-black text-sm md:text-base text-center w-[90%] mb-6 md:mb-12">
                     {
@@ -355,7 +412,7 @@ export default function LandingPageWebXR() {
                     }
                   </span>
                   <a
-                    href="https://kd-cibiru.upi.edu/"
+                    href="https://new-web-vr-y24j.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -382,11 +439,11 @@ export default function LandingPageWebXR() {
                 {/* Card 2 */}
                 <div className="flex flex-col items-center">
                   <img
-                    src={Sample}
+                    src={f39}
                     className="w-full h-[180px] md:h-[200px] lg:h-[271px] object-cover mb-4 md:mb-[33px]"
                   />
                   <span className="text-black text-lg md:text-2xl font-bold mb-3 md:mb-[50px] text-center">
-                    {"Kantin Kampus"}
+                    {"Perpustakaan"}
                   </span>
                   <span className="text-black text-sm md:text-base text-center w-[90%] mb-6 md:mb-12">
                     {
@@ -394,7 +451,7 @@ export default function LandingPageWebXR() {
                     }
                   </span>
                   <a
-                    href="https://kd-cibiru.upi.edu/"
+                    href="https://new-web-vr-y24j.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -421,11 +478,11 @@ export default function LandingPageWebXR() {
                 {/* Card 1 */}
                 <div className="flex flex-col items-center ">
                   <img
-                    src={Sample}
+                    src={f22}
                     className="w-full h-[180px] md:h-[200px] lg:h-[271px] object-cover  mb-4 md:mb-[33px]"
                   />
                   <span className="text-black text-lg md:text-2xl font-bold mb-3 md:mb-[50px] text-center">
-                    {"Kantin Kampus"}
+                    {"Ruang Audio Visual"}
                   </span>
                   <span className="text-black text-sm md:text-base text-center w-[90%] mb-6 md:mb-12">
                     {
@@ -433,7 +490,7 @@ export default function LandingPageWebXR() {
                     }
                   </span>
                   <a
-                    href="https://kd-cibiru.upi.edu/"
+                    href="https://new-web-vr-y24j.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -460,11 +517,11 @@ export default function LandingPageWebXR() {
                 {/* Card 2 */}
                 <div className="flex flex-col items-center">
                   <img
-                    src={Sample}
+                    src={f11}
                     className="w-full h-[180px] md:h-[200px] lg:h-[271px] object-cover mb-4 md:mb-[33px]"
                   />
                   <span className="text-black text-lg md:text-2xl font-bold mb-3 md:mb-[50px] text-center">
-                    {"Kantin Kampus"}
+                    {"Ruang Kuliah"}
                   </span>
                   <span className="text-black text-sm md:text-base text-center w-[90%] mb-6 md:mb-12">
                     {
@@ -472,7 +529,7 @@ export default function LandingPageWebXR() {
                     }
                   </span>
                   <a
-                    href="https://kd-cibiru.upi.edu/"
+                    href="https://new-web-vr-y24j.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -503,10 +560,13 @@ export default function LandingPageWebXR() {
           {/* Gallery */}
 
           <span className="text-[#192A3D] text-[22px] md:text-[32px] lg:text-[40px] font-bold mb-[40px] md:mb-[60px] lg:mb-[92px] text-center px-4">
-            {"Indikator"}
+            {"Galeri Kampus UPI Cibiru"}
           </span>
 
-          <div className="w-full px-4 mb-[80px] md:mb-[120px] lg:mb-[175px]">
+          <div
+            id="galeri"
+            className="w-full px-4 mb-[80px] md:mb-[120px] lg:mb-[175px]"
+          >
             <div
               className="bg-white rounded-[10px] w-full max-w-[1300px] mx-auto p-4 md:p-6 lg:p-8"
               style={{ boxShadow: "0px 8px 20px #ffffff26" }}
@@ -518,11 +578,11 @@ export default function LandingPageWebXR() {
                   className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
                   style={{ boxShadow: "12px 12px 33px #0000001A" }}
                 >
-                  <img src={Sample} className="w-full h-full object-cover" />
+                  <img src={f3} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-[#155E85]/40"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white text-lg font-semibold">
-                      Judul
+                      Gedung Biru
                     </span>
                   </div>
                 </div>
@@ -532,11 +592,11 @@ export default function LandingPageWebXR() {
                   className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
                   style={{ boxShadow: "12px 12px 33px #0000001A" }}
                 >
-                  <img src={Sample} className="w-full h-full object-cover" />
+                  <img src={f7} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-[#155E85]/40"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white text-lg font-semibold">
-                      Judul
+                      Gedung Baru
                     </span>
                   </div>
                 </div>
@@ -546,25 +606,11 @@ export default function LandingPageWebXR() {
                   className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
                   style={{ boxShadow: "12px 12px 33px #0000001A" }}
                 >
-                  <img src={Sample} className="w-full h-full object-cover" />
+                  <img src={f6} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-[#155E85]/40"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white text-lg font-semibold">
-                      Judul
-                    </span>
-                  </div>
-                </div>
-
-                {/* Foto 4 */}
-                <div
-                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
-                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
-                >
-                  <img src={Sample} className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
-                  <div className="absolute bottom-0 left-0 p-4">
-                    <span className="text-white text-lg font-semibold">
-                      Judul
+                      Gedung I
                     </span>
                   </div>
                 </div>
@@ -574,11 +620,389 @@ export default function LandingPageWebXR() {
                   className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
                   style={{ boxShadow: "12px 12px 33px #0000001A" }}
                 >
-                  <img src={Sample} className="w-full h-full object-cover" />
+                  <img src={f9} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-[#155E85]/40"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white text-lg font-semibold">
-                      Judul
+                      Gedung Asrama
+                    </span>
+                  </div>
+                </div>
+
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f11} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Ruang Kelas
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f12} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Komputer Multimedia
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f13} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Komputer Inovasi
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f14} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Robotika Pendidikan
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f15} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Fotografi
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f16} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Audio
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f17} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Microteaching
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f18} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Komputer Mac
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f19} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Komputer Rekayasa Perangkat Lunak
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f20} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Komputer PGPAUD
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f21} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Bahasa
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f22} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Ruang Audio Visual
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f23} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Smart Classroom
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f24} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium IPS
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f25} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Matematika
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f26} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium Kesenian
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f27} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Laboratorium IPA
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f28} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Ruang Pertemuan Cawalaloka
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f29} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Ruang Aula Gedung Biru
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f30} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Kantin
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f39} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Perpustakaan
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f32} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Ruang Aula Gedung I
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f33} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Teater Terbuka
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f34} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Taman Baca
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f35} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Tribun
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f36} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Area Parkir Mobil
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f37} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Area Parkir Motor
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f38} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Bangku dan Gazebo
+                    </span>
+                  </div>
+                </div>
+
+                {/* Foto 4 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f1} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Masjid
                     </span>
                   </div>
                 </div>
@@ -588,14 +1012,68 @@ export default function LandingPageWebXR() {
                   className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
                   style={{ boxShadow: "12px 12px 33px #0000001A" }}
                 >
-                  <img src={Sample} className="w-full h-full object-cover" />
+                  <img src={f2} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-[#155E85]/40"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                     <span className="text-white text-lg font-semibold">
-                      Judul
+                      Poliklinik
                     </span>
                   </div>
                 </div>
+
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f4} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Gedung Perkuliahan
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f5} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Gedung Perkuliahan
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f8} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Lapangan Olahraga
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[230px] lg:h-[271px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <img src={f10} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-[#155E85]/40"></div>
+                  <div className="absolute bottom-0 left-0 p-4">
+                    <span className="text-white text-lg font-semibold">
+                      Sekretariat Himpunan
+                    </span>
+                  </div>
+                </div>
+                {/* Foto 6 */}
               </div>
             </div>
           </div>
@@ -614,6 +1092,19 @@ export default function LandingPageWebXR() {
             >
               {/* Grid: 1 kolom di 320, 1 kolom di 768, 2 kolom di 1024 */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
+                {/* Video 7 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[280px] lg:h-[400px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/7osOpNn8o3M?si=qOtu5bhC0dAhwxP1"
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
                 {/* Video 1 */}
                 <div
                   className="relative w-full h-[200px] md:h-[280px] lg:h-[400px] rounded-[10px] overflow-hidden"
@@ -635,7 +1126,7 @@ export default function LandingPageWebXR() {
                 >
                   <iframe
                     className="w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
+                    src="https://www.youtube.com/embed/J6eHY1sefy4?si=JE52bJmoFvPtNBwS"
                     title="YouTube video"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -649,7 +1140,7 @@ export default function LandingPageWebXR() {
                 >
                   <iframe
                     className="w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
+                    src="https://www.youtube.com/embed/2ElqUNkZ6s0?si=tqlwLjgDArB3wYQj"
                     title="YouTube video"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -663,7 +1154,34 @@ export default function LandingPageWebXR() {
                 >
                   <iframe
                     className="w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/kS69ZoFt5eM?si=tZb9jX5l7ts3EUrH"
+                    src="https://www.youtube.com/embed/1XpaDG3t2kg?si=Vg8_tyxZ3do6qUuV"
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+
+                {/* Video 5 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[280px] lg:h-[400px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/fbb-C99oTNs?si=oSHUKwStvW56wwZE"
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                {/* Video 6 */}
+                <div
+                  className="relative w-full h-[200px] md:h-[280px] lg:h-[400px] rounded-[10px] overflow-hidden"
+                  style={{ boxShadow: "12px 12px 33px #0000001A" }}
+                >
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/VF3T3b-C1jw?si=qqAh3AlQQWAx3zUN"
                     title="YouTube video"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -678,46 +1196,23 @@ export default function LandingPageWebXR() {
           <div className="flex flex-col items-start self-stretch bg-[#155E85] py-[100px]">
             <div className="flex items-start mb-[41px] ml-[216px]">
               <span className="text-white text-5xl font-bold mr-[727px]">
-                {"LOGO"}
+                <img
+                  src={LOGOCIBIRU}
+                  className="w-auto h-[44px] md:h-[56px] lg:h-[70px] object-fill"
+                />
               </span>
-              <span className="text-white text-xl mt-5 mr-[107px]">
-                {"Lorem Ipsum"}
-              </span>
-              <span className="text-white text-xl mt-5">{"Lorem Ipsum"}</span>
             </div>
-            <span className="text-white text-xl mb-8 ml-[214px]">
-              {"Ruang Lorem Ipsum Ruang Lorem Ipsum"}
+            <span className="text-white text-3xl mb-8 ml-[214px] h-[44px] flex items-center gap-3">
+              <MapPin color="#ffffff" size={40} />
+              {"Alamat"}
             </span>
-            <div className="flex items-center mb-[225px] ml-[213px] gap-5">
-              <img
-                src={
-                  "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/uZrwsYnXBJ/3m9lmlpj_expires_30_days.png"
-                }
-                className="w-[52px] h-[52px] object-fill"
-              />
-              <img
-                src={
-                  "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/uZrwsYnXBJ/9d578pu0_expires_30_days.png"
-                }
-                className="w-[52px] h-[52px] object-fill"
-              />
-              <img
-                src={
-                  "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/uZrwsYnXBJ/591k0nvb_expires_30_days.png"
-                }
-                className="w-[52px] h-[52px] object-fill"
-              />
-            </div>
-            <div className="flex items-center self-stretch max-w-[1492px] mx-auto">
-              <span className="text-white text-xl">
-                {"Ruang Lorem Ipsum Ruang Lorem Ipsum"}
-              </span>
-              <div className="flex-1 self-stretch"></div>
-              <span className="text-white text-xl mr-[107px]">
-                {"Lorem Ipsum"}
-              </span>
-              <span className="text-white text-xl">{"Lorem Ipsum"}</span>
-            </div>
+
+            <span className="text-white text-2xl mb-8 ml-[214px] leading-relaxed block">
+              {
+                "Loby Gedung Biru - Jalan Pendidikan No.15, Cibiru Wetan, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 40625"
+              }
+            </span>
+            <div className="flex items-center mb-[225px] ml-[213px] gap-5"></div>
           </div>
         </div>
       </div>
