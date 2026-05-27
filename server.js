@@ -5,7 +5,11 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://project-webxr.vercel.app/",
+  }),
+);
 app.use(express.json());
 
 app.post("/api/chat", async (req, res) => {
