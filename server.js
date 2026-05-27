@@ -58,15 +58,19 @@ dotenv.config();
 
 const app = express();
 
-// ✅ Harus sebelum semua route
-const corsOptions = {
-  origin: "https://project-webxr.vercel.app",
-  methods: ["GET", "POST", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
+// ✅ Handle CORS manual — tanpa app.options
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "https://project-webxr.vercel.app");
+  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
-app.use(cors(corsOptions));
-app.options("/(.*)", cors(corsOptions)); // ✅ Handle preflight
+  // Langsung jawab preflight OPTIONS request
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(200);
+  }
+  next();
+});
+
 app.use(express.json());
 
 app.post("/api/chat", async (req, res) => {
