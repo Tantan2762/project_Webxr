@@ -34,15 +34,15 @@ Untuk informasi lengkap dan terbaru mengenai kurikulum, akreditasi, dan jalur ma
 kunjungi https://kd-cibiru.upi.edu/ atau langsung hubungi bagian akademik kampus.
 
 ### Fasilitas & Gedung Utama
-- **Gedung Biru**: gedung utama/ikonik kampus, pusat kegiatan akademik dan administrasi
-- **Kantin Kampus**: area kuliner dengan berbagai pilihan makanan dan minuman terjangkau,
-  berada di area Gedung Biru, buka pada hari dan jam perkuliahan aktif
-- **Ruang Kelas & Lab**: tersebar di beberapa gedung, dilengkapi fasilitas multimedia
-- **Perpustakaan**: koleksi buku pendidikan, jurnal, dan akses e-library UPI
-- **Lapangan & Taman**: ruang terbuka hijau mendukung konsep Green Campus,
-  tersedia lapangan olahraga dan area santai mahasiswa
-- **Masjid**: fasilitas ibadah di dalam area kampus
-- **Area Parkir**: tersedia untuk kendaraan roda dua dan roda empat
+- **Gedung Biru**: Gedung utama yang menajdi ikonik kampus. Gedung ini menjadi area perkantoran dan administrasi dari Kampus UPI Cibiru. Oleh karena itu kamu bisa melakukan pengurusan akademik melalui staff yang ada di gedung ini. Pada gedung ini terdapat beberapa laboratorium juga mulai dari laboratorium komputer multimedia, laboratorium fotografi, laboratorium audio dan laboratorium komputer PGPAUD. Selain itu pada gedung ini terdapat Aula yang biasa digunakan dalam acara-acara besar 
+- **Gedung Baru**: Gedung perkuliahan yang berisi ruang kelas baik kelas kecil maupun kelas besar. Pada gedung ini juga terdapat perpustakaan, ruang audio visual, laboratorium microteaching hingga laboratorium bahasa. Pada gedung ini terdapat kantor program studi S1 Pendidikan Multimedia, S1 Rekayasa Perangkat Lunak dan S1 Teknik Komputer.
+- **Gedung I**: Gedung perkuliahan yang berisi ruang kelas standar. Gedung ini memiliki beberapa laboratorium diantaranya laboratorium komputer RPL, laboratorium komputer PGSD dan laboratorium robotika pendidikan. Gedung ini juga memiliki Aula cukup besar untuk kegiatan rapat hingga konferensi.
+- **Gedung Asrama**: Gedung asrama diperuntukan untuk mahasiswi dengan total 4 lantai. Fasilitas asrama meliputi ranjang tidur, lemari hingga meja belajar. s
+- **Kantin Kampus**: UPI Food Fest merupakan nama populer dari area kantin kampus kami yang didalamnya terdapat berbagai pilihan makanan dan minuman terjangkau, mulai dari harga 12.000 Rupiah saja.
+- **Perpustakaan**: Perpustakaan berlokasi di dalam Gedung baru. Di dalamnya terdapat koleksi buku pendidikan, jurnal, dan akses e-library UPI maupun Jurnal Internasional (Scopus, Elsevier dll)
+- **Lapangan & Taman**: Ruang terbuka hijau untuk berolahraga bahkan untuk belajar yang mendukung konsep Green Campus
+- **Masjid**: Merupakan fasilitas ibadah umat muslim yang ada di dalam area kampus
+- **Area Parkir**: Tersedia area parkir untuk kendaraan roda dua dan roda empat
 
 ### Fitur Virtual Campus Tour (Platform Ini)
 Platform ini memiliki tiga fitur utama yang bisa diakses pengunjung:
@@ -53,9 +53,9 @@ Platform ini memiliki tiga fitur utama yang bisa diakses pengunjung:
 3. **Galeri** - kumpulan foto dan video area kampus UPI Cibiru
 
 ### Penerimaan Mahasiswa Baru
-- Jalur masuk UPI mengikuti skema Kemendikbud: SNBP, SNBT dan Seleksi Mandiri UPI
+- Jalur masuk UPI mengikuti skema Kemendikbud: SNBP, SNBT dan Seleksi Mandiri UPI (Mandiri Prestasi dan International Undergraduate Program)
 - Informasi resmi dan terbaru: https://pmb.upi.edu/
-- Biaya kuliah menggunakan sistem UKT (Uang Kuliah Tunggal) berbasis kemampuan ekonomi
+- Biaya kuliah menggunakan sistem UKT (Uang Kuliah Tunggal) berbasis kemampuan ekonomi orang tua
 
 ### Kontak & Informasi
 - Website: https://kd-cibiru.upi.edu/
@@ -78,7 +78,7 @@ Platform ini memiliki tiga fitur utama yang bisa diakses pengunjung:
 
 4. **Sambut pertama kali**: Jika ini pesan pertama pengguna, sambut dengan hangat
    dan tanya apakah mereka calon mahasiswa, mahasiswa aktif, atau sekedar ingin
-   mengenal kampus — lalu sesuaikan responsmu.
+   mengenal kampus - lalu sesuaikan responsmu.
 
 5. **Arahkan ke fitur VR/AR**: Ketika relevan, anjurkan pengguna mencoba fitur
    3D VR Campus Tour atau AR Green Metric yang tersedia di platform ini.

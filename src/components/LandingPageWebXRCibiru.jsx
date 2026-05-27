@@ -43,6 +43,10 @@ import f36 from "../assets/36.jpg";
 import f37 from "../assets/37.jpg";
 import f38 from "../assets/38.jpg";
 import f39 from "../assets/39.jpg";
+import f40 from "../assets/40.jpg";
+import f41 from "../assets/41.jpg";
+import f42 from "../assets/42.jpg";
+import f43 from "../assets/43.jpg";
 
 import {
   ScanQrCode,
@@ -199,15 +203,162 @@ export default function LandingPageWebXR() {
           {/* Batas Informasi Cibiru */}
 
           <span className="text-[#192A3D] text-[40px] font-bold mb-[92px]">
-            {"Mulai dengan AR Cibiru !"}
+            {"Implementasi Green Metric Kampus UPI Cibiru !"}
           </span>
-          <div className="flex flex-col items-center self-stretch bg-[#AAB5C3] py-[362px] mb-[175px]">
-            <img
-              src={
-                "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/uZrwsYnXBJ/3y11g7ch_expires_30_days.png"
-              }
-              className="w-[210px] h-[210px] object-fill"
-            />
+          <div className="mx-[20px]">
+            <div
+              className="flex flex-col lg:flex-row items-center self-stretch bg-white w-full max-w-[1300px]  py-5 mb-[162px] mx-auto rounded-[15px] px-4 lg:px-0 "
+              style={{
+                boxShadow: "0px 8px 20px #00000026",
+              }}
+            >
+              <div className="flex flex-col shrink-0 items-start w-full lg:w-auto lg:ml-[22px] lg:mr-[30px]">
+                <img
+                  src={f40}
+                  className="w-full h-full  lg:w-[478px] md:h-full lg:h-full object-cover rounded-[10px]"
+                />
+              </div>
+              <div className="flex flex-1 flex-col items-start mt-4 lg:mt-0 lg:mr-[20px]">
+                <span className="text-[#192A3D] text-[22px] md:text-[28px] lg:text-[32px] font-bold mb-[26px] ml-[3px]">
+                  {"Pengolahan Sisa Makanan"}
+                </span>
+                <span className="text-[#192A3D] text-sm md:text-base mb-8">
+                  {
+                    "Menurut data dari World Resources Institute (WRI), emisi gas rumah kaca dari sampah makanan menyumbang 8% dari emisi global. Jika diibaratkan sebagai negara, limbah sampah makanan menjadi penghasil GRK terbesar ketiga tepat dibelakang Tiongkok dan AS. Sebagian besar emisi gas yang dihasilkan adalah gas metana, yang memiliki potensi 25 kali lebih tinggi dibanding karbon dioksida dalam meningkatkan pemanasan global."
+                  }
+                  {/* https://unnes.ac.id/feb/sejauh-mana-indonesia-darurat-sampah-makanan/ */}
+                </span>
+
+                <a
+                  href="https://youtu.be/7osOpNn8o3M?si=Ixb5UfYOGm3nLnpn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="flex flex-col items-start bg-[#1DB0E0] text-left py-2 px-[15px] rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
+                    <span className="text-white text-base">
+                      {"Selengkapnya"}
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mx-[20px]">
+            <div
+              className="flex flex-col lg:flex-row items-center self-stretch bg-white w-full max-w-[1300px] py-5 mb-[162px] mx-auto rounded-[15px] px-4 lg:px-0 "
+              style={{
+                boxShadow: "0px 8px 20px #00000026",
+              }}
+            >
+              <div className="flex flex-col shrink-0 items-start w-full lg:w-auto lg:ml-[22px] lg:mr-[30px]">
+                <img
+                  src={f41}
+                  className="w-full h-full  lg:w-[478px] md:h-full lg:h-full object-cover rounded-[10px]"
+                />
+              </div>
+              <div className="flex flex-1 flex-col items-start mt-4 lg:mt-0 lg:mr-[20px]">
+                <span className="text-[#192A3D] text-[22px] md:text-[28px] lg:text-[32px] font-bold mb-[26px] ml-[3px]">
+                  {"Pengolahan Sampah Daun Menguning/Coklat"}
+                </span>
+                <span className="text-[#192A3D] text-sm md:text-base mb-8">
+                  {
+                    "Sampah cokelat biasanya merupakan sumber karbon dalam kompos, contohnya adalah daun kering, tanah, dan jerami. Sedangkan sampah hijau merupakan sumber nitrogen dalam kompos, contohnya seperti sampah dapur sisa sayur-mayur dan buah-buahan."
+                  }
+                  {/* https://www.instagram.com/reel/CPFj1_sghFg/ */}
+                </span>
+
+                <a
+                  href="https://youtu.be/7osOpNn8o3M?si=Ixb5UfYOGm3nLnpn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="flex flex-col items-start bg-[#1DB0E0] text-left py-2 px-[15px] rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
+                    <span className="text-white text-base">
+                      {"Selengkapnya"}
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mx-[20px]">
+            <div
+              className="flex flex-col lg:flex-row items-center self-stretch bg-white w-full max-w-[1300px] py-5 mb-[162px] mx-auto rounded-[15px] px-4 lg:px-0 "
+              style={{
+                boxShadow: "0px 8px 20px #00000026",
+              }}
+            >
+              <div className="flex flex-col shrink-0 items-start w-full lg:w-auto lg:ml-[22px] lg:mr-[30px]">
+                <img
+                  src={f42}
+                  className="w-full h-full  lg:w-[478px] md:h-full lg:h-full object-cover rounded-[10px]"
+                />
+              </div>
+              <div className="flex flex-1 flex-col items-start mt-4 lg:mt-0 lg:mr-[20px]">
+                <span className="text-[#192A3D] text-[22px] md:text-[28px] lg:text-[32px] font-bold mb-[26px] ml-[3px]">
+                  {"Pengolahan Sampah Botol Plastik"}
+                </span>
+                <span className="text-[#192A3D] text-sm md:text-base mb-8">
+                  {
+                    "Sampah plastik merupakan jenis sampah yang sulit terurai dan paling banyak ditemukan di lingkungan. Sampah plastik seperti botol plastik merupakan produk sekali pakai dan biasanya dibuang sembarangan tempat yang jika dibiarkan secara terus-menerus akan menyebabkan pencemaran lingkungan."
+                  }
+                  {/* https://www.dmi-journals.org/jai/article/view/963 */}
+                </span>
+
+                <a
+                  href="https://youtu.be/7osOpNn8o3M?si=Ixb5UfYOGm3nLnpn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="flex flex-col items-start bg-[#1DB0E0] text-left py-2 px-[15px] rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
+                    <span className="text-white text-base">
+                      {"Selengkapnya"}
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mx-[20px]">
+            <div
+              className="flex flex-col lg:flex-row items-center self-stretch bg-white w-full max-w-[1300px] py-5 mb-[162px] mx-auto rounded-[15px] px-4 lg:px-0 "
+              style={{
+                boxShadow: "0px 8px 20px #00000026",
+              }}
+            >
+              <div className="flex flex-col shrink-0 items-start w-full lg:w-auto lg:ml-[22px] lg:mr-[30px]">
+                <img
+                  src={f43}
+                  className="w-full h-full  lg:w-[478px] md:h-full lg:h-full object-cover rounded-[10px]"
+                />
+              </div>
+              <div className="flex flex-1 flex-col items-start mt-4 lg:mt-0 lg:mr-[20px]">
+                <span className="text-[#192A3D] text-[22px] md:text-[28px] lg:text-[32px] font-bold mb-[26px] ml-[3px]">
+                  {"Pengolahan Sampah Botol Kaca"}
+                </span>
+                <span className="text-[#192A3D] text-sm md:text-base mb-8">
+                  {
+                    "Sampah botol kaca merupakan sampah anorganik yang tidak dapat mengalami pembusukan secara alami. Pengolahan botol kaca perlu diperkenalkan pada masyarakat untuk membantu mengurangi permasalahan penumpukan sampah anorganik.Pengolahan kaca sendiri merupakan salah satu kerajinan yang telah berkembang di Indonesia. Ada dua teknik pengolahan kaca yaitu teknik panas dan dingin. Kedua teknik ini dapat dikembangkan bersamaan dalam mengolah sampah botol kaca. "
+                  }
+                  {/* https://share.google/E3uyGBDD5Yrzw3JF7 */}
+                </span>
+
+                <a
+                  href="https://youtu.be/7osOpNn8o3M?si=Ixb5UfYOGm3nLnpn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="flex flex-col items-start bg-[#1DB0E0] text-left py-2 px-[15px] rounded-[5px] border-0 cursor-pointer hover:bg-[#FF8849] transition-colors duration-200">
+                    <span className="text-white text-base">
+                      {"Selengkapnya"}
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
 
           <span className="text-[#192A3D] text-[40px] font-bold mb-[92px]">
