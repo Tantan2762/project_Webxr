@@ -34,23 +34,23 @@ Untuk informasi lengkap dan terbaru mengenai kurikulum, akreditasi, dan jalur ma
 kunjungi https://kd-cibiru.upi.edu/ atau langsung hubungi bagian akademik kampus.
 
 ### Fasilitas & Gedung Utama
-- **Gedung Biru**: Gedung utama yang menajdi ikonik kampus. Gedung ini menjadi area perkantoran dan administrasi dari Kampus UPI Cibiru. Oleh karena itu kamu bisa melakukan pengurusan akademik melalui staff yang ada di gedung ini. Pada gedung ini terdapat beberapa laboratorium juga mulai dari laboratorium komputer multimedia, laboratorium fotografi, laboratorium audio dan laboratorium komputer PGPAUD. Selain itu pada gedung ini terdapat Aula yang biasa digunakan dalam acara-acara besar 
-- **Gedung Baru**: Gedung perkuliahan yang berisi ruang kelas baik kelas kecil maupun kelas besar. Pada gedung ini juga terdapat perpustakaan, ruang audio visual, laboratorium microteaching hingga laboratorium bahasa. Pada gedung ini terdapat kantor program studi S1 Pendidikan Multimedia, S1 Rekayasa Perangkat Lunak dan S1 Teknik Komputer.
-- **Gedung I**: Gedung perkuliahan yang berisi ruang kelas standar. Gedung ini memiliki beberapa laboratorium diantaranya laboratorium komputer RPL, laboratorium komputer PGSD dan laboratorium robotika pendidikan. Gedung ini juga memiliki Aula cukup besar untuk kegiatan rapat hingga konferensi.
-- **Gedung Asrama**: Gedung asrama diperuntukan untuk mahasiswi dengan total 4 lantai. Fasilitas asrama meliputi ranjang tidur, lemari hingga meja belajar. s
-- **Kantin Kampus**: UPI Food Fest merupakan nama populer dari area kantin kampus kami yang didalamnya terdapat berbagai pilihan makanan dan minuman terjangkau, mulai dari harga 12.000 Rupiah saja.
-- **Perpustakaan**: Perpustakaan berlokasi di dalam Gedung baru. Di dalamnya terdapat koleksi buku pendidikan, jurnal, dan akses e-library UPI maupun Jurnal Internasional (Scopus, Elsevier dll)
-- **Lapangan & Taman**: Ruang terbuka hijau untuk berolahraga bahkan untuk belajar yang mendukung konsep Green Campus
-- **Masjid**: Merupakan fasilitas ibadah umat muslim yang ada di dalam area kampus
-- **Area Parkir**: Tersedia area parkir untuk kendaraan roda dua dan roda empat
+- Gedung Biru : Gedung utama yang menajdi ikonik kampus. Gedung ini menjadi area perkantoran dan administrasi dari Kampus UPI Cibiru. Oleh karena itu kamu bisa melakukan pengurusan akademik melalui staff yang ada di gedung ini. Pada gedung ini terdapat beberapa laboratorium juga mulai dari laboratorium komputer multimedia, laboratorium fotografi, laboratorium audio dan laboratorium komputer PGPAUD. Selain itu pada gedung ini terdapat Aula yang biasa digunakan dalam acara-acara besar 
+- Gedung Baru : Gedung perkuliahan yang berisi ruang kelas baik kelas kecil maupun kelas besar. Pada gedung ini juga terdapat perpustakaan, ruang audio visual, laboratorium microteaching hingga laboratorium bahasa. Pada gedung ini terdapat kantor program studi S1 Pendidikan Multimedia, S1 Rekayasa Perangkat Lunak dan S1 Teknik Komputer.
+- Gedung I : Gedung perkuliahan yang berisi ruang kelas standar. Gedung ini memiliki beberapa laboratorium diantaranya laboratorium komputer RPL, laboratorium komputer PGSD dan laboratorium robotika pendidikan. Gedung ini juga memiliki Aula cukup besar untuk kegiatan rapat hingga konferensi.
+- Gedung Asrama : Gedung asrama diperuntukan untuk mahasiswi dengan total 4 lantai. Fasilitas asrama meliputi ranjang tidur, lemari hingga meja belajar. s
+- Kantin Kampus : UPI Food Fest merupakan nama populer dari area kantin kampus kami yang didalamnya terdapat berbagai pilihan makanan dan minuman terjangkau, mulai dari harga 12.000 Rupiah saja.
+- Perpustakaan : Perpustakaan berlokasi di dalam Gedung baru. Di dalamnya terdapat koleksi buku pendidikan, jurnal, dan akses e-library UPI maupun Jurnal Internasional (Scopus, Elsevier dll)
+- Lapangan & Taman : Ruang terbuka hijau untuk berolahraga bahkan untuk belajar yang mendukung konsep Green Campus
+- Masjid : Merupakan fasilitas ibadah umat muslim yang ada di dalam area kampus
+- Area Parkir : Tersedia area parkir untuk kendaraan roda dua dan roda empat
 
 ### Fitur Virtual Campus Tour (Platform Ini)
 Platform ini memiliki tiga fitur utama yang bisa diakses pengunjung:
-1. **AR Green Metric** - lihat informasi indikator Green Campus UPI Cibiru
+1. AR Green Metric - lihat informasi indikator Green Campus UPI Cibiru
    menggunakan teknologi Augmented Reality langsung di lingkungan nyata
-2. **3D VR Campus Tour** - jelajahi kampus secara virtual 360° melalui browser,
+2. 3D VR Campus Tour - jelajahi kampus secara virtual 360° melalui browser,
    tidak perlu install aplikasi khusus, tersedia di berbagai perangkat
-3. **Galeri** - kumpulan foto dan video area kampus UPI Cibiru
+3. Galeri - kumpulan foto dan video area kampus UPI Cibiru
 
 ### Penerimaan Mahasiswa Baru
 - Jalur masuk UPI mengikuti skema Kemendikbud: SNBP, SNBT dan Seleksi Mandiri UPI (Mandiri Prestasi dan International Undergraduate Program)
