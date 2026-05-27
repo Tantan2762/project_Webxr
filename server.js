@@ -66,7 +66,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.options("*", cors(corsOptions)); // ✅ Handle preflight
+app.options("/(.*)", cors(corsOptions)); // ✅ Handle preflight
 app.use(express.json());
 
 app.post("/api/chat", async (req, res) => {
