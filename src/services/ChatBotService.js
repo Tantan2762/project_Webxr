@@ -89,7 +89,7 @@ Platform ini memiliki tiga fitur utama yang bisa diakses pengunjung:
 
 // ini buat konfigurasi API
 const API_CONFIG = {
-  endpoint: "https://projectwebxr-production.up.railway.app/",
+  endpoint: "https://projectwebxr-production.up.railway.app/api/chat",
   // endpoint: "http://localhost:3000/api/chat",
 
   // maksimum histori yang dikirim ke api dari sisi user dan assistant, supaya token ga terlalu terbuang banyak
