@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "https://project-webxr.vercel.app/",
+    origin: "https://project-webxr.vercel.app",
   }),
 );
 
